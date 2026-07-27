@@ -28,3 +28,8 @@ EXCHANGE_API_KEY = os.getenv("EXCHANGE_API_KEY")
 API_URL = (
     f"https://v6.exchangerate-api.com/v6/{EXCHANGE_API_KEY}/latest/{BASE_CURRENCY}"
 )
+
+
+# Logs
+LOGS_DIR = PROJECT_ROOT / "logs"
+LOGS_DIR.mkdir(exist_ok=True)
